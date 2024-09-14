@@ -1,0 +1,139 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #1c1c2d; /* Dark blue */
+    color: #fff; /* White text */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+    background-color: #252540; /* Darker blue */
+    border-bottom: 2px solid #3c3c5a; /* Border for contrast */
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.inventory-form, .inventory-list , .inventory-editForm{
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+.inventory-form{
+    display: none;
+}
+.inventory-editForm{
+    display: none;
+}
+
+.card {
+    background-color: #252540;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    margin-bottom: 20px;
+}
+
+.inventory-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #3c3c5a;
+}
+
+.inventory-item:last-child {
+    border-bottom: none;
+}
+
+.inventory-item p {
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+form input, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+form input {
+    background-color: #33334d; /* Dark gray input fields */
+    color: #fff;
+}
+
+form button {
+    background-color: #5cb85c; /* Green action button */
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+button.action-btn {
+    background-color: #d9534f; /* Red for action button */
+    border: none;
+    color: white;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #252540;
+    color: #ccc;
+    border-top: 2px solid #3c3c5a;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    main {
+        padding: 10px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .inventory-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .inventory-item p {
+        margin: 0;
+    }
+
+    button.action-btn {
+        margin-top: 10px;
+        align-self: flex-end;
+    }
+}
